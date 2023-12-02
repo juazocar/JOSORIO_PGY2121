@@ -28,18 +28,22 @@ public class PeliculaController {
     //CONECTAR TODOS LOS METODOS QUE SE ENCUENTREN EN LA CAPA DAO.....
     
     public List<Pelicula> buscarFiltro(int anioDesde, int anioHasta, String filtroGenero){
-        return null;
+        return peliculaDAO.buscarFiltro(anioDesde, anioHasta, filtroGenero);
     }
     
     public List<Pelicula> buscarTodos(){
-        return null;
+        return peliculaDAO.buscarTodos();
     }
 
     public boolean actualizarRegistro(Pelicula pelicula){
-        return false;
+        return peliculaDAO.actualizarRegistro(pelicula);
     }
     
     public boolean eliminarPelicula(int idPelicula){
-        return false;
+        return peliculaDAO.eliminarPelicula(idPelicula);
+    }
+    
+    public Pelicula buscarPorId(int idPelicula){
+        return peliculaDAO.buscarPorId(idPelicula);
     }
 }
