@@ -262,6 +262,7 @@ public class PeliculaDAO {
     }//Fin Método Eliminar
      
       public boolean actualizarRegistro(Pelicula peli){
+          System.out.println("VAMOS A ACTUALIZAR EL REGISTRO");
         try {
             ConexionBD conexion1 = new ConexionBD();
             Connection cnx = conexion1.obtenerConexion();
